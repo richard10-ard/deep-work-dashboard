@@ -27,12 +27,11 @@ if cursor.fetchone()[0] == 0:
 # --- 2. USER INTERFACE ---
 st.set_page_config(page_title="Deep Work Dashboard", page_icon="🧠", layout="centered")
 # --- CUSTOM CSS ---
-
 st.markdown("""
     <style>
     /* Change the main background color */
     .stApp {
-        background-color: #00008B; 
+        background-color: #f4f4f9; 
     }
     
     /* Style the main title */
@@ -44,7 +43,7 @@ st.markdown("""
     
     /* Style the text inputs */
     .stTextInput > div > div > input {
-        background-color: #ADD8E6;
+        background-color: #00008B;
         color: #333333;
         border-radius: 8px;
         border: 1px solid #d1d5db;
