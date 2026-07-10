@@ -43,7 +43,7 @@ st.markdown("""
     
     /* Style the text inputs */
     .stTextInput > div > div > input {
-        background-color: #00008B;
+        background-color: #fffff;
         color: #333333;
         border-radius: 8px;
         border: 1px solid #d1d5db;
