@@ -26,7 +26,36 @@ if cursor.fetchone()[0] == 0:
 
 # --- 2. USER INTERFACE ---
 st.set_page_config(page_title="Deep Work Dashboard", page_icon="🧠", layout="centered")
-
+# --- CUSTOM CSS ---
+st.markdown("""
+    <style>
+    /* Change the main background color */
+    .stApp {
+        background-color: #f4f4f9; 
+    }
+    
+    /* Style the main title */
+    h1 {
+        color: #2c3e50;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+    
+    /* Style the text inputs */
+    .stTextInput > div > div > input {
+        background-color: #ffffff;
+        color: #333333;
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
+        padding: 10px;
+    }
+    
+    /* Make the progress bar custom colors */
+    .stProgress > div > div > div > div {
+        background-color: #4CAF50;
+    }
+    </style>
+""", unsafe_allow_html=True)
 st.title("🧠 Deep Work Dashboard")
 st.markdown("### Your Daily Top 3")
 st.write("List the three most critical tasks you need to focus on today. They will save automatically.")
